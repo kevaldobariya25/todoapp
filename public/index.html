@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Todo List Management System</title>
+   <link rel="stylesheet" href="styles.css">
+ </head>
+ <body>
+   <header>
+     <div class="container">
+       <div id="branding">
+         <h1>Todo List Management System</h1>
+       </div>
+     </div>
+   </header>
+   
+   <div class="container">
+     <section id="main">
+       <form id="todo-form">
+         <input type="text" id="description" placeholder="New Todo Description" required>
+         <button type="submit">Add Todo</button>
+       </form>
+       
+       <h2>Todo List</h2>
+       <button id="download-csv-btn">Download CSV</button>
+       <table id="todo-table">
+         <thead>
+           <tr>
+             <th>Description</th>
+             <th>Status</th>
+             <th>Actions</th>
+           </tr>
+         </thead>
+         <tbody>
+           
+         </tbody>
+       </table>
+     </section>
+     
+     <section id="upload-form">
+       <h2>Upload Todos from CSV</h2>
+       <form id="csv-upload-form" enctype="multipart/form-data">
+         <input type="file" id="csv-file" accept=".csv" required>
+         <button type="submit">Upload CSV</button>
+       </form>
+     </section>
+   </div>
+   
+   <footer>
+     <p>Todo List Management System &copy; 2024</p>
+   </footer>
+   
+   <script src="app.js"></script>
+ </body>
+ </html>
+ 

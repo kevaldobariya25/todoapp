@@ -1,0 +1,147 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+header {
+  background: #35424a;
+  color: #ffffff;
+  padding: 30px 0;
+  border-bottom: #e8491d 3px solid;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+#main, #upload-form {
+  background: #ffffff;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input[type="text"], form input[type="file"], form button {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 80%;
+}
+
+form button {
+  background-color: #35424a;
+  color: white;
+  cursor: pointer;
+  width: 40%;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+h2 {
+  text-align: center;
+  color: #35424a;
+}
+
+#todo-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+#todo-table, #todo-table th, #todo-table td {
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+#todo-table th, #todo-table td {
+  padding: 10px;
+}
+
+#todo-table th {
+  background-color: #35424a;
+  color: white;
+}
+
+#todo-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+button {
+  cursor: pointer;
+}
+
+.toggle-status-btn {
+  float: right;
+  background-color: #35424a;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.toggle-status-btn:hover {
+  background-color: #45a049;
+}
+
+.actions-btn {
+  text-align: center;
+}
+
+.actions-btn .delete-btn {
+  background-color: #35424a;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.actions-btn .delete-btn:hover {
+  background-color: #45a049;
+}
+
+#download-csv-btn {
+  background-color: #35424a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#download-csv-btn:hover {
+  background-color: #45a049;
+}
+
+footer {
+  background: #35424a;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  border-top: #e8491d 3px solid;
+}
